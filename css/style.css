@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #4b6584;
+    user-select: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color:#7ed6df ;
+}
+.nav{
+    max-width: 1200px ;
+    margin:auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo a{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform:uppercase ;
+    text-decoration: none;
+    color: #fff;
+}
+.box{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.cart-select{
+    position:absolute;
+    background-color: #2f3542;
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    right: 0;
+    padding: 3px;
+    border-radius: 50%;
+    line-height: 20px;
+    z-index: 99;
+}
+#cart-icon{
+    position: absolute;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-top: 10px;
+    right: 1px;
+}
+.container{
+    max-width: 1200px;
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+}
+.shop-contant{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 40px;
+    align-content: center;
+    justify-content: center;
+}
+img{
+    width: 100%;
+}
+.tittle{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.food-group{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(243, 240, 240, 0.2) 0px 2px 8px 0px;
+   position: relative;
+}
+.pic{
+overflow: hidden;
+}
+.food-img{
+transition: 0.4s;
+aspect-ratio: 1/1;
+}
+.pic:hover img{
+    transform: scale(1.5);
+}
+.food-tittle{
+    font-size:20px ;
+    font-weight:500 ;
+    color:orangered;
+}
+.food-price{
+   font-weight: 500;
+}
+.add-cart{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: #2ed573;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.add-cart:hover{
+    background-color: rgba(255, 0, 0, 0.786);
+}
+.cart{
+    position:fixed;
+    top: 0;
+    right: -100%;
+    width: 440px;
+    height: 100vh;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto ;
+    padding: 20px;
+    z-index: 100;
+
+}
+.cart-active{
+    right: 0;
+    transition: 0.2s;
+}
+.cart-tittle{
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid rgb(169, 163, 163);
+    padding-bottom: 10px;
+}
+.cart-box{
+   display: grid;
+   grid-template-columns: 32% 50% 18%;
+   align-items: center;
+   gap: 1rem;
+   margin-bottom: 10px;
+   margin-top: 20px ;
+   border-bottom: 1px solid gray !important;
+   padding: 10px;
+}
+.cart-box img{
+   width:  95px;
+   height: 95px;
+   box-shadow: rgba(243, 240, 240, 0.2) 0px 2px 8px 0px;
+   padding: 10px;
+   border: 2px solid rgba(0,0,0,0.2);
+   object-fit: cover;
+}
+.details-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-food{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: orangered;
+}
+.price-box{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+ .details-box .cart-quantity{
+    border: none;
+    outline: none;
+    width: 2.4rem;
+    border: 2px solid rgba(0,0,0,0.4);
+    text-align: center;
+}
+.add-remove{
+    cursor: pointer;
+    font-size: 22px;
+    color: orangered;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1.2rem;
+}
+.total-tittle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.total-price{
+    font-weight: 400;
+}
+.total-btn{
+    padding:  12px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #2f3542;
+    color: #fff;
+    border-radius: 3px;
+}
+#add-close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
